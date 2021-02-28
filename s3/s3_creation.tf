@@ -12,7 +12,7 @@ aws cli for checking s3 list is aws s3 ls
 provider "aws"{
 region = "us-east-2"
 shared_credentials_file="C:\\Users\\terraform\\.aws\\creds"
-profile = "default"
+
 
 }
 
