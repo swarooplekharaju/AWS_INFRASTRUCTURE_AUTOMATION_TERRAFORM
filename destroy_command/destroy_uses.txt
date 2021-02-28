@@ -1,0 +1,32 @@
+resource "aws_s3_bucket" "s3_example" {
+    bucket = "tf-practice-s3"
+    acl="private"
+
+}
+resource "aws_s3_bucket" "s3_example2" {
+    bucket = "tf-practice-s3"
+    acl="private"
+
+}
+
+terraform destroy in directory ,destroys all resources in the directory
+
+terraform destroy 
+result 2 to destroy 
+
+terraform destroy -target resource_type .name 
+
+terraform destroy - target "aws_S3_bucket"."s3_example1"
+result - > 1 to destroy 
+# "aws_S3_bucket"."s3_example1" 
+press yes to destroy and it will be destroyed 
+
+method2 :
+comment the resource in the main.tf and plan it 
+it stays 1 to destroy 
+this is another way of destroying the resource
+
+
+
+
+
